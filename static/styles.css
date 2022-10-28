@@ -1,0 +1,41 @@
+img {
+    width: 70%;
+    height: 70%;
+}
+
+table tr td { vertical-align: middle; }
+.oll tr:nth-child(even), .pll tr:nth-child(even) {
+    background-color: #121212;
+}
+
+.oll tr td:first-child {
+    width: 15%;
+    padding-left: 1em;
+}
+.oll tr td:nth-child(2) { width: 15%; }
+
+.pll tr td:first-child {
+    width: 10%;
+    padding-left: 1em;
+}
+.pll tr td:nth-child(2) { width: 15%; }
+
+.ind {
+    width: 80%;
+    margin: auto;
+}
+.ind tr td { font-size: 30px; }
+.ind tr td:nth-child(odd) { width: 20%; }
+.ind tr td:nth-child(even) { width: 30%; }
+
+
+ul {
+    width: 75%;
+    margin: auto;
+    padding: 2em;
+}
+
+.title {
+    text-align: center;
+    padding: 0.5em 0 0.5em;
+}
