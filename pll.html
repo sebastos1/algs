@@ -1,132 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <title>PLL</title>
     <link rel="stylesheet" href="/algs/static/styles.css">
     <link rel="icon" type="image/x-icon" href="/static/favicon.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sebastos1/still.css@main/still.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  </head>
+    <script src="script.js"></script>
+</head>
+<html>
+
+<body>
+
+    <input type="button" value="Hide" onClick="hide();" id="button" style="float:right;position:absolute;">
+
+    <h1 class="title">PLL</h1>
+
+    <table class="pll">
+        <tr>
+            <td>Aa</td>
+            <td><img src="/algs/static/aa.png" style="transform:rotate(90deg)"></td>
+            <td>R' F R' B2 R F' R' B2 R2</td>
+        </tr>
+        <tr>
+            <td>Ab</td>
+            <td><img src="/algs/static/ab.png" style="transform:rotate(180deg)"></td>
+            <td>R2 B2 R F R' B2 R F' R</td>
+        </tr>
+        <tr>
+            <td>E</td>
+            <td><img src="/algs/static/e.png"></td>
+            <td>x' R U' R' D R U R' D' R U R' D R U' R' D'</td>
+        </tr>
+        <tr>
+            <td>F</td>
+            <td><img src="/algs/static/f.png"></td>
+            <td>R' U' F' R U R' U' R' F R2 U' R' U' R U R' U R</td>
+        </tr>
+        <tr>
+            <td>Ga</td>
+            <td><img src="/algs/static/ga.png"></td>
+            <td>
+                R2 u R' U R' U' R u' R2 y' R' U R
+            </td>
+        </tr>
+        <tr>
+            <td>Gb</td>
+            <td><img src="/algs/static/gb.png"></td>
+            <td>
+                R' U' R y R2 u R' U R U' R u' R2
+            </td>
+        </tr>
+        <tr>
+            <td>Gc</td>
+            <td><img src="/algs/static/gc.png"></td>
+            <td>
+                R2 u' R U' R U R' u R2 y R U' R'
+            </td>
+        </tr>
+        <tr>
+            <td>Gd</td>
+            <td><img src="/algs/static/gd.png"></td>
+            <td>
+                R U R' y' R2 u' R U' R' U R' u R2
+            </td>
+        </tr>
+        <tr>
+            <td>H</td>
+            <td><img src="/algs/static/h.png"></td>
+            <td>M2 U' M2 U2 M2 U' M2</td>
+        </tr>
+        <tr>
+            <td>Ja</td>
+            <td><img src="/algs/static/ja.png" style="transform:rotate(270deg)"></td>
+            <td>R' U L' U2 R U' R' U2 R L</td>
+        </tr>
+        <tr>
+            <td>Jb</td>
+            <td><img src="/algs/static/jb.png"></td>
+            <td>R U R' F' R U R' U' R' F R2 U' R'</td>
+        </tr>
+
+        <tr>
+            <td>Na</td>
+            <td><img src="/algs/static/na.png"></td>
+            <td>R U R' U R U R' F' R U R' U' R' F R2 U' R' U2 R U' R'</td>
+        </tr>
+        <tr>
+            <td>Nb</td>
+            <td><img src="/algs/static/nb.png"></td>
+            <td>
+                R' U L' U2 R U' L R' U L' U2 R U' L
+            </td>
+        </tr>
+        <tr>
+            <td>Ra</td>
+            <td><img src="/algs/static/ra.png" style="transform:rotate(90deg)"></td>
+            <td>R U2 R' U2 R B' R' U' R U R B R2</td>
+        </tr>
+        <tr>
+            <td>Rb</td>
+            <td><img src="/algs/static/rb.png" style="transform:rotate(270deg)"></td>
+            <td>R' U2 R U2 R' F R U R' U' R' F' R2'</td>
+        </tr>
+        <tr>
+            <td>T</td>
+            <td><img src="/algs/static/t.png"></td>
+            <td>R U R' U' R' F R2 U' R' U' R U R' F'</td>
+        </tr>
+        <tr>
+            <td>Ua</td>
+            <td><img src="/algs/static/ua.png" style="transform:rotate(180deg)"></td>
+            <td>R2 U' R' U' R U R U R U' R</td>
+        </tr>
+        <tr>
+            <td>Ub</td>
+            <td><img src="/algs/static/ub.png" style="transform:rotate(180deg)"></td>
+            <td>R' U R' U' R' U' R' U R U R2</td>
+        </tr>
+        <tr>
+            <td>V</td>
+            <td><img src="/algs/static/v.png"></td>
+            <td>R' U R' U' y R' F' R2 U' R' U R' F R F</td>
+        </tr>
+        <tr>
+            <td>Y</td>
+            <td><img src="/algs/static/y.png"></td>
+            <td>F R U' R' U' R U R' F' R U R' U' R' F R F'</td>
+        </tr>
+        <tr>
+            <td>Z</td>
+            <td><img src="/algs/static/z.png"></td>
+            <td>M2 U' M2 U' M' U2 M2 U2 M'</td>
+        </tr>
+    </table>
+
+</body>
+
 </html>
-
-<h1 class="title">PLL</h1>
-
-<table class="pll">
-    <tr>
-        <td>Aa</td>
-        <td><img src="/algs/static/aa.png" style="transform:rotate(90deg)"></td>
-        <td>R' F R' B2 R F' R' B2 R2</td>
-    </tr>
-    <tr>
-        <td>Ab</td>
-        <td><img src="/algs/static/ab.png" style="transform:rotate(180deg)"></td>
-        <td>R2 B2 R F R' B2 R F' R</td>
-    </tr>
-    <tr>
-        <td>E</td>
-        <td><img src="/algs/static/e.png"></td>
-        <td>x' R U' R' D R U R' D' R U R' D R U' R' D'</td>
-    </tr>
-    <tr>
-        <td>F</td>
-        <td><img src="/algs/static/f.png"></td>
-        <td>R' U' F' R U R' U' R' F R2 U' R' U' R U R' U R</td>
-    </tr>
-     <tr>
-        <td>Ga</td>
-        <td><img src="/algs/static/ga.png"></td>
-        <td>
-            R2 u R' U R' U' R u' R2 y' R' U R
-        </td>
-    </tr>
-    <tr>
-        <td>Gb</td>
-        <td><img src="/algs/static/gb.png"></td>
-        <td>
-            R' U' R y R2 u R' U R U' R u' R2
-        </td>
-    </tr>
-    <tr>
-        <td>Gc</td>
-        <td><img src="/algs/static/gc.png"></td>
-        <td>
-            R2 u' R U' R U R' u R2 y R U' R'
-        </td>
-    </tr>
-    <tr>
-        <td>Gd</td>
-        <td><img src="/algs/static/gd.png"></td>
-        <td>
-            R U R' y' R2 u' R U' R' U R' u R2
-        </td>
-    </tr>
-    <tr>
-        <td>H</td>
-        <td><img src="/algs/static/h.png"></td>
-        <td>M2 U' M2 U2 M2 U' M2</td>
-    </tr>
-    <tr>
-        <td>Ja</td>
-        <td><img src="/algs/static/ja.png" style="transform:rotate(270deg)"></td>
-        <td>R' U L' U2 R U' R' U2 R L</td>
-    </tr>
-    <tr>
-        <td>Jb</td>
-        <td><img src="/algs/static/jb.png"></td>
-        <td>R U R' F' R U R' U' R' F R2 U' R'</td>
-    </tr>
-
-    <tr>
-        <td>Na</td>
-        <td><img src="/algs/static/na.png"></td>
-        <td>R U R' U R U R' F' R U R' U' R' F R2 U' R' U2 R U' R'</td>
-    </tr>
-    <tr>
-        <td>Nb</td>
-        <td><img src="/algs/static/nb.png"></td>
-        <td>
-            R' U L' U2 R U' L R' U L' U2 R U' L
-        </td>
-    </tr>
-    <tr>
-        <td>Ra</td>
-        <td><img src="/algs/static/ra.png" style="transform:rotate(90deg)"></td>
-        <td>R U2 R' U2 R B' R' U' R U R B R2</td>
-    </tr>
-    <tr>
-        <td>Rb</td>
-        <td><img src="/algs/static/rb.png" style="transform:rotate(270deg)"></td>
-        <td>R' U2 R U2 R' F R U R' U' R' F' R2'</td>
-    </tr>
-    <tr>
-        <td>T</td>
-        <td><img src="/algs/static/t.png"></td>
-        <td>R U R' U' R' F R2 U' R' U' R U R' F'</td>
-    </tr>
-    <tr>
-        <td>Ua</td>
-        <td><img src="/algs/static/ua.png" style="transform:rotate(180deg)"></td>
-        <td>R2 U' R' U' R U R U R U' R</td>
-    </tr>
-    <tr>
-        <td>Ub</td>
-        <td><img src="/algs/static/ub.png" style="transform:rotate(180deg)"></td>
-        <td>R' U R' U' R' U' R' U R U R2</td>
-    </tr>
-    <tr>
-        <td>V</td>
-        <td><img src="/algs/static/v.png"></td>
-        <td>R' U R' U' y R' F' R2 U' R' U R' F R F</td>
-    </tr>
-    <tr>
-        <td>Y</td>
-        <td><img src="/algs/static/y.png"></td>
-        <td>F R U' R' U' R U R' F' R U R' U' R' F R F'</td>
-    </tr>
-    <tr>
-        <td>Z</td>
-        <td><img src="/algs/static/z.png"></td>
-        <td>M2 U' M2 U' M' U2 M2 U2 M'</td>
-    </tr>
-</table>
