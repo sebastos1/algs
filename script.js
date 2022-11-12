@@ -4,7 +4,7 @@ function hide() {
             var rows = document.getElementsByTagName("table")[num].rows;
             for (var i = 0, row; row = rows[i]; i++) {
                 var cell = row.cells[2];
-                cell.style.display = bruh;
+                cell.style.fontSize = bruh;
             }
         }
     }
@@ -13,7 +13,7 @@ function hide() {
     var tables = document.getElementsByTagName("table").length;
 
     if (lol == "Hide") {
-        setcell("none");
+        setcell("0");
         document.getElementById("button").value = "Show";
     } else {
         setcell("revert");
