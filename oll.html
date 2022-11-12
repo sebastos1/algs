@@ -9,15 +9,17 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sebastos1/still.css@main/still.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 <body>
   <script>
     function hide() {
       function setcell(bruh) {
         for (let num = 0; num < tables; num++) {
           var rows = document.getElementsByTagName("table")[num].rows;
-          var last = rows[rows.length - 1];
-          var cell = last.cells[2];
-          cell.style.display = bruh;
+          for (var i = 0, row; row = rows[i]; i++) {
+            var cell = row.cells[2];
+            cell.style.display = bruh;
+          }
         }
       }
 
@@ -32,11 +34,12 @@
         document.getElementById("button").value = "Hide";
       }
     }
+
   </script>
 
-  <h1 class="title">OLL</h1>
+  <input type="button" value="Hide" onClick="hide();" id="button" style="float:right">
 
-  <input type="button" value="Hide" onClick="hide();" id="button">
+  <h1 class="title">OLL</h1>
 
   <h2>Cross</h2>
   <table class="oll">
@@ -152,4 +155,5 @@
     </tr>
   </table>
 </body>
+
 </html>
