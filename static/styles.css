@@ -29,6 +29,7 @@ table tr td { vertical-align: middle; }
 .ind tr td:nth-child(even) { width: 30%; }
 
 
+
 ul {
     width: 75%;
     margin: auto;
